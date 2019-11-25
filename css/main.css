@@ -13,8 +13,10 @@ body {
 
 header {
 	width: 100%;
-	height: 80px;
-	background: #666666;
+	height: 60px;
+	background: #e7eaef;
+    position: fixed;
+
 }
 
 .menu {
@@ -24,10 +26,87 @@ header {
     margin-left: auto;
     margin-right: auto;
     grid-template-columns: 1fr 2fr;
-    grid
+    grid-auto-rows: minmax(60px, 60px);
+    text-align: center;
+    align-items: center;
 }
 
 .logo {
     text-decoration: none;
+    color: #05828e;
     font-size: 40px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.logo:hover {
+    color: #78a8bc;
+}
+
+nav {
+
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 1em;
+    color: #162229;
+    font-family: 'Caveat:700', cursive;
+}
+
+nav a:hover {
+    color: #78a8bc;
+}
+
+    /* Boxes */
+
+box {
+    display: grid;
+    max-width: 1280px;
+    width: 100%;
+    padding-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: 1fr 1fr 1f;
+    grid-gap: 1em;
+    text-align: center;
+    align-items: center;
+    grid-auto-rows: minmax (auto, auto);
+    padding-top: 5em;
+}
+
+box img {
+    background-size: contain;
+}
+
+.box1 {
+    grid-column: 1/2;
+    grid-row: 1;
+    background: red;
+    
+    
+    overflow: hidden;
+}
+
+.box1:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.box2 {
+    grid-column: 3;
+    grid-row: 1/3;
+    background: red;
+}
+
+.box3 {
+    grid-column: 1;
+    grid-row: 2;
+    background: red;
+}
+
+.box4 {
+    grid-column: 2;
+    grid-row: 2;
+    background: red;
 }
