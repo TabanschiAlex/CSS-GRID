@@ -1,0 +1,33 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+	/* Header */
+
+header {
+	width: 100%;
+	height: 80px;
+	background: #666666;
+}
+
+.menu {
+    display: grid;
+    max-width: 1280px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: 1fr 2fr;
+    grid
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 40px;
+}
