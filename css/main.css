@@ -3,7 +3,7 @@ body {
     margin: 0;
     background-image: url(../img/s1200.webp);
     background-attachment: fixed;
-    background-size: 100% 100%;
+    background-size: 100%;
     background-repeat: no-repeat;
 }
 
@@ -80,8 +80,7 @@ box {
     grid-template-columns: repeat (4, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-gap: 10px;
-    padding-top: 100px;
-    grid-auto-columns: minmax(410px, auto);
+    padding-top: 80px;
 }
 
 .image {
@@ -154,12 +153,71 @@ box a:hover {
     font-size: 50px;
     text-align: center;
     color: #05828e;
+    font-family: 'Caveat:700', cursive;
 }
 
 text {
     font-size: 25px;
+    font-family: sans-serif;
 }
 
 text ul {
     font-style: italic;
+}
+
+
+text a {
+    text-decoration: none;
+}
+
+ /* Screen Resolution */
+
+@media screen and (max-width: 800px) {
+    
+        /* Header */
+    
+    .menu {
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+
+    .logo {
+        font-size: 30px;
+    }
+
+    nav {
+        background-image: url(../img/menu.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 80px;
+        height: 35px;
+    }
+    
+    nav a {
+        display: none;
+    }
+    
+    nav:hover > nav a:hover {
+        display: block;
+        position: absolute;
+        z-index: 110;
+    }
+
+        /* Information */
+    
+    box {
+        padding-top: 40px;
+    }
+    
+    #info p {
+        font-size: 30px;
+    }
+
+    text {
+        font-size: 20px;
+    }
+
+    text ul {
+        font-style: italic;
+    }
 }
